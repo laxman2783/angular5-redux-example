@@ -14,7 +14,12 @@
 <button (click)="Decrement()">Decrement</button>
 
 <button (click)="resetCount()">Reset</button>
-<div>
 
- COUNT :  {{count$ | async }}
-  </div>
+<button (click)="resetCount()">Docker</button>
+ {{title1$|async}}
+<ul>
+    <li *ngFor="let campaign of title1$| async">
+       {{campaign}}
+    </li>
+</ul>
+
